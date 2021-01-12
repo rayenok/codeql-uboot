@@ -1,6 +1,5 @@
 import cpp
-
-from Function f
-where f.getName() = "memcpy"
-select f, "a function named memcpy"
+from Macro m
+where m.getName() = "ntohl" or m.getName() = "ntohll" or m.getName() = "ntohs"
+select m, m.getName()
 
